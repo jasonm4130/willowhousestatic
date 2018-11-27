@@ -1,0 +1,32 @@
+header
+    .header-top
+        background: $brightGreen
+        .top-content
+            justify-content: center
+            align-items: center
+            color: $white
+            height: 100%
+            padding: .5em
+            a
+                color: $white
+                font-weight: bold
+    nav.navbar
+        border-top: 3px solid darken($white, 10%)
+        .nav-item
+            margin: 0 1em
+            a.nav-link
+                color: $black
+                font-weight: bold
+                transition: all 0.3s ease-in-out
+            &.active
+                a.nav-link
+                    color: $brightGreen
+            &:hover
+                a.nav-link
+                    color: darken($brightGreen, 5%)
+    .logo
+        margin: 1em 0
+    .toggle
+        margin: 1em 0em
+        @include media-breakpoint-up(md)
+            display: none
